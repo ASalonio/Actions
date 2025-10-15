@@ -4,5 +4,7 @@ jobs:
   read age:
     runs-on: windows
     steps:
-      - name: read age
-        run:
+      - name: Install pandas
+        run: pip install pandas
+      - name: Run Python script
+        run: python read_age.py
