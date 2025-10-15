@@ -2,9 +2,18 @@ name: python-1
 on: push
 jobs:
   read_age:
-    runs-on: windows
+    runs-on: windows-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
       - name: Install pandas
         run: pip install pandas
+
       - name: Run Python script
         run: python read_age.py
