@@ -1,0 +1,8 @@
+name: python-1
+on: push
+jobs:
+  read age:
+    runs-on: windows
+    steps:
+      - name: read age
+        run:
