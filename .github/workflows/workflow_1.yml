@@ -1,7 +1,7 @@
 name: python-1
 on: push
 jobs:
-  read age:
+  read_age:
     runs-on: windows
     steps:
       - name: Install pandas
