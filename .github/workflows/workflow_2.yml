@@ -23,4 +23,5 @@ jobs:
         run: pip install pandas
 
       - name: Run Python script
-        run: python scripts/read_age.py
+        working-directory: scripts
+        run: python read_age.py
