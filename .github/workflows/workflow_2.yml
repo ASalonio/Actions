@@ -6,7 +6,7 @@ on:
       - 'main'
   schedule:
     - cron:
-        "5 * 22 10 *"
+        "5 * 22 10 *" #hora utc
 jobs:
   read_age:
     runs-on: windows-latest
@@ -23,4 +23,4 @@ jobs:
         run: pip install pandas
 
       - name: Run Python script
-        run: python script/read_age.py
+        run: python scripts/read_age.py
